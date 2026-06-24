@@ -1,0 +1,24 @@
+# Secrets — never commit these
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Annual report PDFs (large, and may be copyrighted filings — don't ship in the repo)
+data/annual_reports/*.pdf
+
+# LlamaIndex persisted vector store (regenerate locally instead of committing)
+data/index_storage/
+
+# IDE / OS clutter
+.vscode/
+.idea/
+.DS_Store
+
+# Pytest cache
+.pytest_cache/

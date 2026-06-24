@@ -1,0 +1,28 @@
+# --- Agent framework ---
+langchain==0.3.30
+langchain-community==0.3.30
+
+#  LLM backbones  
+langchain-google-genai==2.1.12     # Gemini
+langchain-anthropic==0.3.22        # Claude
+
+# --- Tool 1: Web search ---
+tavily-python>=0.3.0
+
+# --- Tool 2: Financial data ---
+yfinance>=0.2.40
+
+# --- Tool 3: Document search (PDF) ---
+llama-index-core>=0.10.0
+llama-index-readers-file>=0.1.0
+llama-index-embeddings-huggingface>=0.2.0   # free local embeddings, no extra API cost
+pypdf>=4.0.0
+
+# --- Memory / orchestration plumbing ---
+python-dotenv>=1.0.0
+
+# --- Dev / testing ---
+pytest>=8.0.0
+
+# --- Frontend ---
+streamlit>=1.35.0
